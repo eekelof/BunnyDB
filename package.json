@@ -1,0 +1,32 @@
+{
+    "name": "bunnydb",
+    "version": "1.0.0",
+    "description": "JSON database for Bun",
+    "type": "module",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "bun build.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/eekelof/BunnyDB.git"
+    },
+    "keywords": [
+        "bunnydb",
+        "bun",
+        "json",
+        "javascript",
+        "typescript"
+    ],
+    "author": "Erik Ekelöf",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/eekelof/BunnyDB/issues"
+    },
+    "homepage": "https://github.com/eekelof/BunnyDB#readme",
+    "devDependencies": {
+        "@types/bun": "^1.0.7",
+        "bun-plugin-dts": "^0.2.3"
+    }
+}
