@@ -21,24 +21,24 @@ bun i bunnydb
 ```typescript
 import { BunnyDB } from "bunnydb"
 
-BunnyDB.dir("users")
+await BunnyDB.dir("users")
 
-BunnyDB.set("users", "id", {id: "id", name: "Bob"})
-BunnyDB.remove("users", "id")
-BunnyDB.exists("users", "id")
+await BunnyDB.set("users", "id", {id: "id", name: "Bob"})
+await BunnyDB.remove("users", "id")
+await BunnyDB.exists("users", "id")
 
-BunnyDB.get("users", "id")
-BunnyDB.getAllIDs("users")
-BunnyDB.getAll("users")
+await BunnyDB.get("users", "id")
+await BunnyDB.getAllIDs("users")
+await BunnyDB.getAll("users")
 ```
 
 ## Notes
 
 ### Use / when creating nested dirs
 ```typescript
-BunnyDB.dir("db")
-BunnyDB.dir("db/users")
-BunnyDB.dir("db/nested/dir")
+await BunnyDB.dir("db")
+await BunnyDB.dir("db/users")
+await BunnyDB.dir("db/nested/dir")
 ```
 
 ## License
