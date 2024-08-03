@@ -21,15 +21,15 @@ bun i bunnydb
 ```typescript
 import { BunnyDB } from "bunnydb"
 
-await BunnyDB.dir("users")
+await BunnyDB.dir("users") // true/false
 
-await BunnyDB.set("users", "id", {id: "id", name: "Bob"})
-await BunnyDB.remove("users", "id")
-await BunnyDB.exists("users", "id")
+await BunnyDB.set("users", "id", {id: "id", name: "Bob"}) // true/false
+await BunnyDB.remove("users", "id") // true/false
+await BunnyDB.exists("users", "id") // true/false
 
-await BunnyDB.get("users", "id")
-await BunnyDB.getAllIDs("users")
-await BunnyDB.getAll("users")
+await BunnyDB.get("users", "id") // any/null
+await BunnyDB.getAllIDs("users") // []
+await BunnyDB.getAll("users") // []
 ```
 
 ## Notes
